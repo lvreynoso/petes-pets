@@ -4,10 +4,7 @@ const mongoose = require('mongoose'),
         Schema = mongoose.Schema;
 
 const PetSchema = new Schema({
-    createdAt       : { type: Date }
-  , updatedAt       : { type: Date }
-
-  , name            : { type: String, required: [true, 'Give that little guy a name!']  }
+    name            : { type: String, required: [true, 'Give that little guy a name!']  }
   , species         : { type: String, required: [true, 'Uh-oh forgot the species'] }
   , picUrl          : { type: String, required: [true, 'Needs a rectangular picture'] }
   , picUrlSq        : { type: String, required: [true, 'Needs a square picture'] }
